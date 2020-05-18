@@ -1,0 +1,27 @@
+header {
+	border: 2px solid red;
+}
+
+a.logo::before {
+	position: absolute;
+	content: "<header>";
+	top: 0;
+	left: 0;
+	font-size: 1rem;
+	background-color: red;
+	color: #fff;
+}
+
+.menu-left ul {
+	border: 2px solid red;
+}
+
+body > div > header > nav > ul > li:nth-child(1)::before {
+	position: absolute;
+	content: "<nav>";
+	top: 0;
+	left: -25px;
+	font-size: 1rem;
+	background-color: red;
+	color: #fff;
+}
