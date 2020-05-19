@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>HTML5 Semantic</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
-	<script src="https://kit.fontawesome.com/0fc21407eb.js" crossorigin="anonymous"></script>
+    <title>HTML5 Semantic</title>
+    <script src="https://kit.fontawesome.com/0fc21407eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
 </head>
+
 <body>
-	<div class="container">
-		<header>
-			<a class="logo flex" href="#">logo</a>
-			<nav class="menu-left">
-				<ul>
-					<li><a href="#">products</a></li>
-					<li><a href="#">shops</a></li>
-					<li><a href="#">blog</a></li>
-				</ul>
-			</nav>
-			<ul class="menu-right">
-				<li>*****</li>
-				<li>
-					<ul>
-						<li><i class="fas fa-phone"></i></li>
-						<li>555 32 16 12</li>
-					</ul>
-				</li>
-			</ul>
-		</header>
-	</div>
-	<!-- jQuery CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<!-- main js -->
-	<script src="js/main.js"></script>
-	<!-- livereload -->
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <div class="container">
+        <header>
+            <a class="logo flex" href="#">logo</a>
+            <nav class="menu-left">
+                <ul>
+                    <li><a class="products" href="#">products</a></li>
+                    <li><a class="shops" href="#">shops</a></li>
+                    <li><a class="blog" href="#">blog</a></li>
+                </ul>
+            </nav>
+            <ul class="menu-right">
+                <li>*****</li>
+                <ul>
+                    <li class="phone"><i class="fas fa-phone"></i></li>
+                    <li>555 32 16 12</li>
+                </ul>
+            </ul>
+        </header>
+        <main>
+        	<article>
+        		<h3>all about our products</h3>
+        		<h6>summary</h6>
+        		<div class="left-col">
+        			<section>
+        				<h3>use 1 for our products</h3>
+						<h6>description</h6>
+        			</section>
+        			<section>
+        				<h3>use 2 for our products</h3>
+						<h6>description</h6>
+        			</section>
+        			<section>
+        				<h3>use 3 for our products</h3>
+						<h6>description</h6>
+        			</section>
+        		</div>
+        		<div class="right-col">
+        			<aside>
+        				<h3>super client reviews</h3>
+        				<p>Client recommendations about the product</p>
+        			</aside>
+        			<aside>
+        				<h3>what the press say</h3>
+        				<p>Summary of independent journalist evaluation of the product (LINK)</p>
+        			</aside>
+        		</div>
+        	</article>
+        	<aside></aside>
+        </main>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <!-- livereload -->
+    <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
 </body>
+
 </html>

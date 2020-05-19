@@ -1,4 +1,10 @@
-/*@import url(outlines.css); */
+@import url(outlines.css); 
+
+:root {
+	--width: 16.66%;
+}
+
+/*Global Style*/
 
 html {
 	box-sizing: border-box;
@@ -14,13 +20,14 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Andale Mono", AndaleMono, monospace;
-
+	
 }
 
 header {
 	display: flex;
 	text-transform: uppercase;
 	min-height: 100px;
+	overflow-x: hidden;
 }
 
 div.container {
@@ -35,23 +42,21 @@ a {
 	text-decoration: none;
 }
 
-
+/*Header Style Start*/
 
 a.logo {
 	position: relative;
-	min-width: 16.66%;
+	min-width: calc(var(--width));
 	background-color: purple;
 	color: pink;
 	font-size: 2rem;
 	border-right: 2px solid #fff;
-	transition: 1s;
+	transition: 0.5s;
 }
 
 a.logo:hover {
-	opacity: 0.8;
+	color: #fff;
 }
-
-body > div > header > a {}
 
 .flex {
 	display: flex;
@@ -64,16 +69,29 @@ nav.menu-left {
 	justify-content: center;
 	align-items: center;
 	background-color: #3290b4;
-	min-width: 49.98%;
 }
 
 .menu-left ul {
 	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
 .menu-left li {
-	padding: 1rem 5rem;
+	padding: 1rem 0;
 	border-right: 1px solid #fff;
+
+}
+
+.menu-left li:nth-child(3) {
+	border: none;
+}
+
+.menu-left a,
+.menu-right li {
+	display: block;
+	min-width: 16.6vw;
+	text-align: center;
 }
 
 body > div > header > nav > ul > li:nth-child(1) {
@@ -97,38 +115,49 @@ body > div > header > nav > ul > li:nth-child(1) {
 
 .menu-right {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	background-color: #327185;
 	margin: 0;
 	padding: 0;
-	min-width: 33.32%;
 	border-left: 2px solid #fff;
 }
 
+.menu-right ul {
+	padding: 0;
+}
+
 .menu-right li {
-	padding: 0.4rem 1rem;
+	transition: 0.5s;
 }
 
 body > div > header > ul > li:nth-child(1) {
+	display: flex;
+	justify-content: center;
 	font-size: 2rem;
 	letter-spacing: 0.4rem;
 	border-right: 1px solid #fff;
 	padding: 1rem;
 }
 
-body > div > header > ul > li:nth-child(2) > ul > li:nth-child(1) {
+li.phone i {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 2px solid #fff;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50px;
 	border-color: #6acafc;
 	margin: 0 auto;
+	font-size: 1rem;
+	margin-bottom: 0.4rem; 
 }
 
+/*Header Style End*/
+
+/*Main Start*/
+
+/*Main End*/
 
 
 	
