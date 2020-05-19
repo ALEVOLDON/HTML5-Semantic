@@ -105,12 +105,12 @@ main > article > div > div.right-col > aside::before {
 	text-transform: none;
 }
 
-body > div > main > aside {
+main > aside {
 	position: relative;
 	border: 2px dashed #000;
 }
 
-body > div > main > aside::before {
+main > aside::before {
 	position: absolute;
 	content: "<aside>";
 	background-color: #000;
@@ -121,3 +121,53 @@ body > div > main > aside::before {
 	text-transform: none;
 	text-align: center;
 }
+
+footer {
+	position: relative;
+	border: 2px solid red;
+}
+
+footer::before {
+	position: absolute;
+	content: "<footer>";
+	background-color: red;
+	color: #fff;
+	top: 0;
+	left: 0;
+	text-transform: none;
+	text-align: center;
+}
+
+footer > nav:nth-child(1) > ul {
+	position: relative;
+	border: 2px solid red;
+}
+
+footer > nav:nth-child(1) > ul::before {
+	position: absolute;
+	content: "<nav>";
+	background-color: red;
+	color: #fff;
+	top: 0;
+	right: 0;
+	text-transform: none;
+	text-align: center;
+}
+
+footer > nav:nth-child(2) {
+	position: relative;
+	margin: 0.5rem;
+	border: 2px solid red;
+}
+
+footer > nav:nth-child(2)::before {
+	position: absolute;
+	content: "<nav>";
+	background-color: red;
+	color: #fff;
+	top: 0;
+	left: 350px;
+	text-transform: none;
+	text-align: center;
+}
+
