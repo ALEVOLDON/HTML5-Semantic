@@ -2,6 +2,10 @@ header {
 	border: 2px solid red;
 }
 
+a.logo {
+	position: relative;
+}
+
 a.logo::before {
 	position: absolute;
 	content: "<header>";
@@ -10,13 +14,18 @@ a.logo::before {
 	font-size: 1rem;
 	background-color: red;
 	color: #fff;
+	text-transform: none;
 }
 
 .menu-left ul {
 	border: 2px solid red;
 }
 
-body > div > header > nav > ul > li:nth-child(1)::before {
+header > nav > ul > li:nth-child(1) {
+	position: relative; 
+}
+
+header > nav > ul > li:nth-child(1)::before {
 	position: absolute;
 	content: "<nav>";
 	top: 0;
@@ -24,4 +33,91 @@ body > div > header > nav > ul > li:nth-child(1)::before {
 	font-size: 1rem;
 	background-color: red;
 	color: #fff;
+	text-transform: none;
+}
+
+main,
+main > article {
+	position: relative;
+	border: 2px solid red;
+}
+
+main::before {
+	position: absolute;
+	content: "<main>";
+	background-color: red;
+	color: #fff;
+	text-transform: none;
+}
+
+main > article::before {
+	position: absolute;
+	content: "<article>";
+	background-color: red;
+	color: #fff;
+	top: 0;
+	right: 0;
+	text-transform: none;
+}
+
+main > article > div > div.left-col > div {
+	position: relative;
+	border: 2px solid red; 
+}
+
+main > article > div > div.left-col > div::before {
+	position: absolute;
+	content: "<div>";
+	background-color: red;
+	color: #fff;
+	top: 0;
+	right: 0;
+	text-transform: none;
+}
+
+main > article > div > div.left-col > section {
+	position: relative;
+	border: 2px solid red;
+}
+
+main > article > div > div.left-col > section::before {
+	position: absolute;
+	content: "<section>";
+	background-color: red;
+	color: #fff;
+	top: 0;
+	right: 0;
+	text-transform: none;
+}
+
+main > article > div > div.right-col > aside {
+	position: relative;
+	border: 2px solid red;
+}
+
+main > article > div > div.right-col > aside::before {
+	position: absolute;
+	content: "<aside>";
+	background-color: red;
+	color: #fff;
+	right: 0;
+	bottom: 0;
+	text-transform: none;
+}
+
+body > div > main > aside {
+	position: relative;
+	border: 2px dashed #000;
+}
+
+body > div > main > aside::before {
+	position: absolute;
+	content: "<aside>";
+	background-color: #000;
+	color: #fff;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-transform: none;
+	text-align: center;
 }
