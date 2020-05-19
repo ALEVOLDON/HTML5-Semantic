@@ -20,13 +20,12 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Andale Mono", AndaleMono, monospace;
-	
 }
 
 header {
 	display: flex;
 	text-transform: uppercase;
-	min-height: 100px;
+	min-height: 18vh;
 	overflow-x: hidden;
 }
 
@@ -157,8 +156,74 @@ li.phone i {
 
 /*Main Start*/
 
+main {
+	display: flex;
+	min-height: 72vh;
+	background-color: #fc0;
+	text-transform: uppercase;
+}
+
+body > div > main > article {
+	min-width: 75%;
+}
+
+body > div > main > article > div > div.left-col > div {
+	margin: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: #ff9803;
+}
+
+div.wrapper {
+	display: flex;
+}
+
+div.left-col {
+	width: 60vw;
+}
+
+body > div > main > article > div.wrapper > div.left-col > section {
+	margin: 1rem;
+	padding: 0.5rem 1rem;
+	background-color: #ff9803;
+}
+
+div.right-col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 25vw;
+	background-color: none; 
+
+}
+
+body > div > main > article > div > div.right-col > aside {
+	margin: 1rem;
+	padding: 1rem;
+}
+
+p {
+	text-transform: none;
+}
+
+body > div > main > aside {
+	min-width: 20%;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+
+
 /*Main End*/
 
+/*Footer Start*/
+
+footer {
+	display: flex;
+	background-color: #390;
+	min-height:10vh;
+}
+
+/*Footer End*/
 
 	
 
