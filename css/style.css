@@ -1,4 +1,4 @@
-@import url(outlines.css); 
+/*@import url(outlines.css); */
 
 :root {
 	--width: 16.66%;
@@ -213,6 +213,7 @@ body > div > main > aside {
 footer {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	background-color: #390;
 	min-height:10vh;
 	text-transform: uppercase;
@@ -258,7 +259,18 @@ footer > nav:nth-child(2) > ul > li {
 }
 
 footer > nav:nth-child(2) > span:nth-child(3) {
-	margin-left: 200px;
+	margin-left: 80px;
+}
+
+footer > button {
+	width: 30px;
+	height: 30px;
+	background-color: red;
+}
+
+footer > div a {
+	font-size: 2rem;
+	border: none;
 }
 
 /*Footer End*/
